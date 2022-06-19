@@ -9,7 +9,12 @@
 ### 準備
 - 使用しているユーザーで`aws configure`でIAMキーとシークレットキーを設定してください
   - https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/cli-configure-quickstart.html
+- 環境変数に以下を指定
 
+```
+AWS_ACCESS_KEY_ID='your_access_key'
+AWS_SECRET_ACCESS_KEY='your_secrete_key'
+```
 
 
 - `script.yml`を編集してください
