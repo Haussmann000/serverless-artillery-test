@@ -6,11 +6,9 @@ services:
     ports:
     - "5000:5000"
     volumes:
-    - .:/var
-    - ~/.aws/:/root/.aws:ro
+    - .:/home/node/artillery
+    - ~/.aws/:/home/node/.aws:ro
+    working_dir: /home/node/artillery
     environment:
-      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
-      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
-      AWS_SDK_LOAD_CONFIG: ${AWS_SDK_LOAD_CONFIG}
       AWS_DEFAULT_REGION: ap-northeast-1
       AWS_DEFAULT_OUTPUT: json
