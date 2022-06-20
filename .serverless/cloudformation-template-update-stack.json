@@ -177,7 +177,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-artillery/dev/1655525663831-2022-06-18T04:14:23.831Z/serverless-artillery.zip"
+          "S3Key": "serverless/serverless-artillery/dev/1655628578782-2022-06-19T08:49:38.782Z/serverless-artillery.zip"
         },
         "FunctionName": "serverless-artillery-dev-loadGenerator",
         "Handler": "handler.handler",
@@ -208,14 +208,14 @@
         "LoadGeneratorLogGroup"
       ]
     },
-    "LoadGeneratorLambdaVersionaSIZ82jOIMxqaLDvmJplX4lbMwuISDyVdkHd27gjsCc": {
+    "LoadGeneratorLambdaVersionglebtEdQWIuFoY6M2Ywdo0DAm8Z4KjsSVPWVr03xoE": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "LoadGeneratorLambdaFunction"
         },
-        "CodeSha256": "efZpVZGiNhgntR8rf6BfG7W0+fmo1Nn0BdN/vQO/8To="
+        "CodeSha256": "r7AZGBfBrscz3RZk6KfVc/sngENth7nPY7uQodKbQQM="
       }
     },
     "LoadGeneratorEventsRuleSchedule1": {
@@ -274,7 +274,7 @@
     "LoadGeneratorLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LoadGeneratorLambdaVersionaSIZ82jOIMxqaLDvmJplX4lbMwuISDyVdkHd27gjsCc"
+        "Ref": "LoadGeneratorLambdaVersionglebtEdQWIuFoY6M2Ywdo0DAm8Z4KjsSVPWVr03xoE"
       }
     }
   }
